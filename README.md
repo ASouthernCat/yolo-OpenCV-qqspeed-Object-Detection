@@ -56,7 +56,7 @@
 - 到此，数据集就整理好了
 - 
 - 准备训练！！！
-- 准备好权重文件yolov3.weights
+- 准备好权重文件yolov3.weights，官网下载地址：https://pjreddie.com/media/files/yolov3.weights
 - 先将其转为Keras适用的h5文件：python convert.py yolov3.cfg yolov3.weights model_data/yolo_weights.h5
 - 注意：yolov3.cfg在这里先不用修改；h5文件名命名为yolo_weights.h5，因为后面的训练程序中要用到，默认为这个。
 - 
