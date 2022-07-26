@@ -1,7 +1,7 @@
 # yolo+OpenCV目标检测 QQ飞车手游赛车及弯道识别
 
 #### 介绍
-   keras_yolov3+OpenCV目标检测，可识别QQ飞车手游内赛车和弯道，支持图片和视频的检测与输出。本视觉小白的初次尝试，经过种种困难后，终于训练出了自己标注的目标检测模型，实属不易，在此记录一下训练的整体步骤，还有很多不足，欢迎学习交流。
+   keras_yolov3+OpenCV目标检测，可识别QQ飞车手游内赛车和弯道，支持图片和视频的检测与输出。本视觉小白的初次尝试，经过种种困难后，终于训练出了自己标注的目标检测模型，实属不易，在此记录一下训练的整体步骤，还有很多不足，欢迎学习交流。视频效果展示请移步b站：https://space.bilibili.com/480493680
 
 #### 环境配置
 1.  系统：Windows11/10
@@ -19,37 +19,39 @@
 #### 使用说明
 
 
-- 成功啦！！！！
-- 
+- 成功啦！！！！ 
 - 过程回顾：
-- 
+-  
 - 整体代码结构：
 - ![输入图片说明](%E6%95%B4%E4%BD%93%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84.png)
 - 
 - 打标很重要：labelimg 安装很简单，在terminal窗口pip install labelimg即可，装好后，直接输入labelimg就能启动
-![输入图片说明](label1.png)
-![输入图片说明](label2.png)
-打标看看就会了：
-![输入图片说明](%E6%89%93%E6%A0%87.png)
-
+- ![输入图片说明](label1.png)
+- ![输入图片说明](label2.png)
+- 打标看看就会了，具体也可以参考这篇博文：https://blog.csdn.net/qq_45504119/article/details/105033492
+- ![输入图片说明](%E6%89%93%E6%A0%87.png)
+- 
 - 数据集目录结构：
 - ![输入图片说明](%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png)
-- - 
+-  
 - 如果是视频，也需打标，用下面这个程序可以转换为一张张图片：video_img_tool.py
-- ![输入图片说明](jpg1.png)
-![输入图片说明](xml.png)
-- 
+-![输入图片说明](video_tool.png)
+- 打完标后的文件夹里内容如下：
+- ![输入图片说明](img.png)
+- ![输入图片说明](anno.png)
+-
 - 打完标后，运行voc.py 在ImageSets/Main文件夹生成4个txt文件：
-- ![输入图片说明](4txt.png)
+- ![输入图片说明](4txt_Main.png)
 - 
+
 - 接着修改、运行voc_annotation.py
-![输入图片说明](voc_annotation.png)
+- ![输入图片说明](voc.png)
 - 
 - 修改classes为自己打标时所设置的标签
-- ![输入图片说明](annotation.png)
+- ![输入图片说明](labeltxt.png)
 
 - 运行完后生成这3个文件：
-- ![输入图片说明](2007_txt.png)
+- ![输入图片说明](3_2007txt.png)
 
 - 到此，数据集就整理好了
 - 
@@ -59,8 +61,7 @@
 - 注意：yolov3.cfg在这里先不用修改；h5文件名命名为yolo_weights.h5，因为后面的训练程序中要用到，默认为这个。
 - 
 - 接着voc_classes.txt 和 yolo_anchors.txt 的内容：
-
-![输入图片说明](voc_classestxt.png)
+- ![输入图片说明](classtxt.png)
 - 改成自己的标签名就行
 - 
 - yolo_anchors.txt 的值用kmeans.py可生成：
