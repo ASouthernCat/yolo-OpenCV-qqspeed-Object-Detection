@@ -21,7 +21,7 @@
 
 - 成功啦！！！！ 
 - 过程回顾：
--  
+ 
 - 整体代码结构：
 - ![输入图片说明](%E6%95%B4%E4%BD%93%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84.png)
 - 
@@ -35,23 +35,23 @@
 - ![输入图片说明](%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png)
 -  
 - 如果是视频，也需打标，用下面这个程序可以转换为一张张图片：video_img_tool.py
--![输入图片说明](video_tool.png)
+- ![输入图片说明](tool_video.png)
 - 打完标后的文件夹里内容如下：
-- ![输入图片说明](img.png)
-- ![输入图片说明](anno.png)
+- ![输入图片说明](4.png)
+- ![输入图片说明](5.png)
 -
 - 打完标后，运行voc.py 在ImageSets/Main文件夹生成4个txt文件：
-- ![输入图片说明](4txt_Main.png)
+- ![输入图片说明](6.png)
 - 
 
 - 接着修改、运行voc_annotation.py
-- ![输入图片说明](voc.png)
+- ![输入图片说明](7.png)
 - 
 - 修改classes为自己打标时所设置的标签
-- ![输入图片说明](labeltxt.png)
+- ![输入图片说明](8.png)
 
 - 运行完后生成这3个文件：
-- ![输入图片说明](3_2007txt.png)
+- ![输入图片说明](9.png)
 
 - 到此，数据集就整理好了
 - 
@@ -61,7 +61,7 @@
 - 注意：yolov3.cfg在这里先不用修改；h5文件名命名为yolo_weights.h5，因为后面的训练程序中要用到，默认为这个。
 - 
 - 接着voc_classes.txt 和 yolo_anchors.txt 的内容：
-- ![输入图片说明](classtxt.png)
+- ![输入图片说明](10.png)
 - 改成自己的标签名就行
 - 
 - yolo_anchors.txt 的值用kmeans.py可生成：
@@ -113,7 +113,7 @@ https://blog.csdn.net/weixin_45392081/article/details/106933516
 - 
 - 
 - 程序主要是修改一下权重文件的路径
--![输入图片说明](check_weights.png) 
+- ![输入图片说明](check_weights.png) 
 
 - 
 - 检查无误后，运行check_weight.py。OK，生成成功。
@@ -128,6 +128,15 @@ https://blog.csdn.net/weixin_45392081/article/details/106933516
 - 
 ![输入图片说明](perfect_result.png)
 - 大功告成，非常nice！
+
+
+#### 参考的大佬博文：
+
+1. https://blog.csdn.net/qq_45504119/article/details/105052478
+1. https://www.cnblogs.com/yssgxxy/p/13949536.html
+1. https://blog.csdn.net/weixin_44747240/article/details/104084273
+1. https://blog.csdn.net/weixin_45392081/article/details/106933516
+
 
 
 #### 参与贡献
