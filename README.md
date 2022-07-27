@@ -1,5 +1,6 @@
 # yolo+OpenCV目标检测 QQ飞车手游赛车及弯道识别
 
+原文链接：https://gitee.com/asoutherncat/qqspeedyolo/blob/master/README.md
 #### 介绍
    keras_yolov3+OpenCV目标检测，可识别QQ飞车手游内赛车和弯道，支持图片和视频的检测与输出。本视觉小白的初次尝试，经过种种困难后，终于训练出了自己标注的目标检测模型，实属不易，在此记录一下训练的整体步骤，还有很多不足，欢迎学习交流。视频效果展示请移步b站：https://space.bilibili.com/480493680
 
