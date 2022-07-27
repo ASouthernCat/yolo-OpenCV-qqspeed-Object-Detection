@@ -1,4 +1,4 @@
-# yolo+OpenCV目标检测 QQ飞车手游赛车及弯道识别
+# yolov3+OpenCV目标检测 QQ飞车手游赛车及弯道识别
 
 原文链接：https://gitee.com/asoutherncat/qqspeedyolo/blob/master/README.md
 #### 介绍
